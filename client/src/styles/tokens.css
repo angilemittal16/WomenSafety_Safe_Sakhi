@@ -1,0 +1,44 @@
+:root {
+  /* Strict Brand Colors */
+  --primary: #007CBE;        /* blue: buttons, headers, icons, links, floating widget */
+  --bg: #FFF7AE;            /* soft yellow: screen backgrounds */
+  --surface: #FFFFFF;       /* cards on top of --bg */
+  --text: #0B2A3A;          /* body text */
+  --primary-dark: #005F90;  /* pressed / hover / focus ring */
+  --primary-light: #D9EEF9; /* chips, subtle fills, selected states */
+  --border-subtle: #E2ECF2;
+  --text-muted: #4A6372;
+  --shadow-sm: 0 2px 8px rgba(11, 42, 58, 0.06);
+  --shadow-md: 0 6px 20px rgba(11, 42, 58, 0.10);
+  --shadow-lg: 0 12px 32px rgba(11, 42, 58, 0.16);
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --tab-bar-height: 72px;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Dark Mode Palette adhering to the same two-color identity */
+[data-theme='dark'] {
+  --bg: #06111C;
+  --surface: #0A1B2A;
+  --text: #F0F6FA;
+  --text-muted: #95B0C2;
+  --primary: #007CBE;
+  --primary-dark: #38A2DE;
+  --primary-light: #123048;
+  --border-subtle: #193852;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

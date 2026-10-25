@@ -1,0 +1,16 @@
+{
+  "short_name": "SafeSakhi",
+  "name": "SafeSakhi Women's Safety",
+  "icons": [
+    {
+      "src": "/icons/shield.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FFF7AE",
+  "theme_color": "#007CBE",
+  "display": "standalone",
+  "orientation": "portrait"
+}

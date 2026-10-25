@@ -1,0 +1,17 @@
+{
+  "name": "safesakhi",
+  "version": "1.0.0",
+  "description": "SafeSakhi - Full-Stack Women's Safety App Prototype",
+  "private": true,
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,yellow\" \"npm run dev:server\" \"npm run dev:client\"",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
